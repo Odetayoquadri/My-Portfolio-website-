@@ -12,7 +12,7 @@ font-family:"poppins",sans-serif;
 
 :root{
 --bg-color:#1f242d;/* dark gray*/
---second-bg-color:#323946;/* light gray*/
+--second-bg-color:#323946;/* light gray*/ni
 --text-color:#fff;/* white*/
 --main-color:#0ef;/* light blue*/
 }
@@ -20,6 +20,7 @@ font-family:"poppins",sans-serif;
 html{
 font-size:62.5%;
 overflow-x:hidden;
+color:var(--text-color);
 }
 
 body{
@@ -32,6 +33,7 @@ padding:10rem 9% 2rem;
  
 }
 header{
+background-color:var(--second-bg-color);
 position:fixed;
 top:0;
 left:0;
@@ -45,24 +47,14 @@ z-index:100%;
 }
 
 .logo{
-color:var(--text-color);
+color:var(--main-color);
 font-size:2.5rem;
 font-weight:600;
 cursor:default;
 }
 
-.navbar a{
-z-index:-1;
-font-size:1.5rem;
-color:var(--text-color);
-margin-left:4rem;
-transition:3s;
-}
 
- 
-.navbar a:hover,.navbar a.active{
-color:var(--main-color);
-} 
+
 
 .dropbtn {
   background-color:var(--bg-color);
@@ -123,7 +115,9 @@ align-items:center;
 .home-img img{
 border-radius:45%;
 }
-
+.home-content p{
+font-size:27px;
+}
 
 .home-content h3{
 font-size:3.2rem;
@@ -227,6 +221,7 @@ margin-top:15px;
 margin-bottom:5rem;
 }
 .services-container{
+z-index:-1;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -239,13 +234,16 @@ background:var(--second-bg-color);
 padding:3rem 2rem 4rem;
 border-radius:3rem;
 text-align:center;
-border:2rem solid var(--bg-color);
 transition:3s ease;
+transform:scale(1.02);
 }
 
 .services-container .services-box:hover{
+z-index:-1;
+border:2rem solid var(--bg-color);
+
  border-color:var(--main-color);
-transform:scale(1.02);
+
 }
 .services-box p{
 margin-bottom:20px;
@@ -253,12 +251,12 @@ font-size:14px;
 }
 
 .services-box i{
-font-size:7rem;
+font-size:32px;
 color:var(--main-color);
 }
 
 
-
+/*
 
 .portfolio{
 background-color:var(--second-bg-color);
@@ -329,6 +327,7 @@ border-radius:50%;
 font-size:2rem;
 color:var(--second-bg-color);
 }
+*/
 
 
 
@@ -351,11 +350,11 @@ flex-wrap:wrap;
 .contact form .input-box input,
 .contact form textarea {
 width: 100%;
-padding: 1.5rem; 
+padding: 16px; 
 font-size: 1.6rem;
 color: black;
 background: var (--second-bg-color); 
-border-radius: 8rem;
+border-radius: 14px;
 margin: 7rem 0;
 }
 
@@ -459,5 +458,31 @@ width:100%
 .btc{
 font-size:18px;
 border:1px double blue;
+
+}
+
+
+address{
+padding-bottom:16px;
+font-size:16px;
+}
+address a{
+color:white;
+border:1px solid var(--main-color)
+}
+.portfolio-container img{
+
+border-radius:15px;
+}
+.portfolio{ 
+border:5px double white; 
+border-radius:15px;
+} 
+figcaption{
+color:var(--main-color);
+padding-bottom:22px;
+text-align:center;
+display:block;
+border-radius:
 
 }
